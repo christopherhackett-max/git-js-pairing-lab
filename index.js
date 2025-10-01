@@ -65,3 +65,10 @@ const isNegative = (num) => {
     }
 }
 //console.log(isNegative(0))
+
+
+
+const triangleArea = (height, base) => {
+    return height * base / 2
+}
+//onsole.log(triangleArea(3, 4))
