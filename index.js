@@ -59,9 +59,9 @@ const add = (num1, num2) => {
 
 const isNegative = (num) => {
     if (num < 0) {
-        return 'true'
+        return true
     } else {
-        return 'false'
+        return false
     }
 }
 //console.log(isNegative(0))
@@ -71,4 +71,14 @@ const isNegative = (num) => {
 const triangleArea = (height, base) => {
     return height * base / 2
 }
-//onsole.log(triangleArea(3, 4))
+//console.log(triangleArea(3, 4))
+
+
+const betweenTwentyAndFourty = (num) => {
+    if (num > 20 && num < 40) {
+        return true
+    } else {
+        return false
+    }
+}
+//console.log(betweenTwentyAndFourty(30))
