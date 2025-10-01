@@ -82,3 +82,20 @@ const betweenTwentyAndFourty = (num) => {
     }
 }
 //console.log(betweenTwentyAndFourty(30))
+
+
+
+
+const largest = (num1, num2, num3) => {
+    let most = num1
+    for (let i = 0; i <= 3; i++) {
+        if (most < num2) {
+            most = num2
+        } else if (most < num3) {
+            most = num3
+        }
+
+    }
+    return most
+}
+//console.log(largest(50, 51, 52))
