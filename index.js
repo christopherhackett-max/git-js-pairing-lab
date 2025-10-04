@@ -99,3 +99,32 @@ const largest = (num1, num2, num3) => {
     return most
 }
 //console.log(largest(50, 51, 52))
+
+
+const printTime = () => {
+    const any = new Date()
+    let time = any.toLocaleTimeString()
+    console.log(time)
+}
+//printTime()
+
+
+const isLeapYear = (year) => {
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+//isLeapYear(2024)
+
+
+const getExtention = (fileName = " ") => {
+    for (let i = fileName.length - 1; i >= 0; i--) {
+        if (fileName[i] === ".") {
+            console.log(fileName.slice(i));
+        }
+    }
+    console.log("");
+}
+getExtention("Table.txt")
