@@ -101,18 +101,6 @@ const largest = (num1, num2, num3) => {
 //console.log(largest(50, 51, 52))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const printTime = () => {
     const any = new Date()
     let time = any.toLocaleTimeString()
@@ -129,31 +117,6 @@ const isLeapYear = (year) => {
     }
 }
 //isLeapYear(2024)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const getExtention = (fileName = " ") => {
