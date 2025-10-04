@@ -101,6 +101,18 @@ const largest = (num1, num2, num3) => {
 //console.log(largest(50, 51, 52))
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 const printTime = () => {
     const any = new Date()
     let time = any.toLocaleTimeString()
@@ -119,12 +131,37 @@ const isLeapYear = (year) => {
 //isLeapYear(2024)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const getExtention = (fileName = " ") => {
     for (let i = fileName.length - 1; i >= 0; i--) {
         if (fileName[i] === ".") {
             console.log(fileName.slice(i));
         }
     }
-    console.log("");
+    console.log();
 }
-getExtention("Table.txt")
+getExtention("Dog.png")
