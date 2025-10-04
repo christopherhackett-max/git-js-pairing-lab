@@ -101,56 +101,30 @@ const largest = (num1, num2, num3) => {
 //console.log(largest(50, 51, 52))
 
 
+const printTime = () => {
+    const any = new Date()
+    let time = any.toLocaleTimeString()
+    console.log(time)
+}
+//printTime()
 
-const absoluteNineteen = (num) => {
-    let total = Math.abs(num - 19)
-    if (num < 19) {
-        return total
+
+const isLeapYear = (year) => {
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        console.log(true)
     } else {
-        return total * 3
+        console.log(false)
     }
 }
-//console.log(absoluteNineteen(20))
+//isLeapYear(2024)
 
 
-
-
-const switchLetters = (string) => {
-    let firstLetter = string[0]
-    let lastLetter = string[string.length - 1]
-    let middle = ''
-    for (let i = 1; i < string.length - 1; i++) { /* gets middle part of word */
-        let char = string[i]
-        middle += char
-    }
-    return lastLetter + middle + firstLetter
-
-    /* slice -> (h)ell(o)
-    console.log(string.slice(1, string.length - 1)) 
-    */
-
-}
-
-//console.log(switchLetters('hello'))
-
-
-const changeString = (word) => {
-    let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    let newWord = ' '
-    for (let i = 0; i < word.length; i++) {
-        //finds first letter in given word
-        for (let j = 0; j < alphabet.length; j++) {
-            if (alphabet[j] === word[i]) /* finds the same letter in alphabet array */ {
-                newWord += alphabet[j + 1] /* adds the next letter */
-
-            }
-
+const getExtention = (fileName = " ") => {
+    for (let i = fileName.length - 1; i >= 0; i--) {
+        if (fileName[i] === ".") {
+            console.log(fileName.slice(i));
         }
     }
-    return (newWord)
-    //once everything found then return new word 
+    console.log();
 }
-
-
-
-//console.log(changeString('word'))
+getExtention("Dog.png")
